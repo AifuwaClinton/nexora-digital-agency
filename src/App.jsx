@@ -16,9 +16,11 @@ function App() {
   },[theme]);
 
   return (
-    <div className='min-h-screen bg-white text-gray-900 transition-colors duration-300 dark:bg-gray-950 dark:text-white'>
+    <div className='min-h-screen  bg-white text-gray-900 transition-colors duration-300 dark:bg-gray-950 dark:text-white'>
       <Navbar theme={theme} setTheme={setTheme}/>
+      <div className='pt-20 '>
       <Hero/>
+      </div>
       <About/>
       <FeaturedWork/>
       <WhatWeDo/>

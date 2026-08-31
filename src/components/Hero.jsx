@@ -4,10 +4,9 @@ import assets from '../assets/assets'
 const Hero = () => {
   return (
     <section id="home" className='mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24'>
-        <div className='grid items-center gap-10 md:grid-cols-2 md:gap-12'>
+        <div className='grid items-center gap-10 md:grid-cols-2 '>
 
             {/* Left side - Hero test */}
-
             <div className='max-w-2xl'>
                 <p className=' mb-4 text-sm font-semibold uppercase tracking-widest text-primary'>Nexora Digital Agency</p>
 
@@ -20,7 +19,7 @@ const Hero = () => {
                     
                     <a href="#connect" className=' items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-primary/90 '>Start a Project →</a>
                     
-                   <a href="#connect" className='inline-flex items-center rounded-full border border-gray-300 px-6 text-sm bg-primary py-3 text-gray-700 font-semibold transition-all duration-200 hover:border-primary 
+                   <a href="#work" className='inline-flex items-center rounded-full border border-gray-300 px-6 text-sm bg-primary py-3 text-gray-700 font-semibold transition-all duration-200 hover:border-primary 
                    hover:bg-primary/5
                    hover:text-primary dark:border-gray-700 dark:text-gray-300 
                    dark:hover:bg-primary/10

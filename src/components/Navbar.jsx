@@ -10,8 +10,8 @@ const Navbar = ({theme, setTheme}) => {
   const [menuOpen, setMenuOpen] =  useState(false);
   return (
 
-    <nav className='w-full border-b border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-950 shadow-[0_8px_24px_rgba(0,0,0,0.12)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.4)] fixed z-50 '>
-      <div className='mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8'>
+    <nav className='fixed top-0 z-50 w-full border-b border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-950 shadow-[0_8px_24px_rgba(0,0,0,0.12)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.4)] '>
+      <div className=' mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8 '>
 
        {/* LOGO */}
        <div className='flex items-center '>
@@ -63,7 +63,7 @@ const Navbar = ({theme, setTheme}) => {
        
       
       </div>
-    </nav>
+    </nav> 
     
     
   )
