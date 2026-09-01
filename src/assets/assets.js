@@ -1,5 +1,10 @@
 // ===== Websites Images =====
 import heroImg from "./hero-img.jpg";
+import spinner from "./spinner.svg";
+
+import heroImg1 from "./hero-img-1.jpeg";
+import heroImg2 from "./hero-img-2.jpeg";
+import heroImg3 from "./hero-img-3.jpeg";
 import branding from "./branding.png";
 import digital from "./digital.png";
 import webDesign from "./web-design.png";
@@ -41,6 +46,10 @@ import Crestora from "./crestora.png"
 
 const assets = {
      heroImg,
+     spinner,
+     heroImg1,
+     heroImg2,
+     heroImg3,
     branding,
     digital,
     webDesign,

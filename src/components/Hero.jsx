@@ -1,7 +1,30 @@
-import React from 'react'
+import React, {useEffect, useState } from 'react'
 import assets from '../assets/assets'
 
 const Hero = () => {
+    const images = [
+    assets.heroImg,
+    assets.heroImg1,
+    assets.heroImg2,
+    assets.heroImg3
+]
+
+const [currentImage, setCurrentImage] = useState(0)
+const [isVisible, setIsVisible] = useState (true)
+
+useEffect(() => {
+    const interval = setInterval(() => {
+        setIsVisible(false)
+
+        setTimeout(() => {
+            setCurrentImage((prev) => (prev + 1) % images.length)
+            setIsVisible(true)
+        }, 700)
+    }, 3000)
+
+    return () => clearInterval (interval)
+}, [images.length])
+     
   return (
     <section id="home" className='mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24'>
         <div className='grid items-center gap-10 md:grid-cols-2 '>
@@ -29,9 +52,10 @@ const Hero = () => {
             </div>
             {/* Right side - Hero test */}
 
-                <div>
-                    <img src={assets.heroImg}
-                     alt="Nexora Digital Agency team working together" className='w-full rounded-3xl object-cover shadow-[0_20px_40px_rgba(0,0,0,0.12) dark:shadow-[0_20px_40px_rgba(0,0,0,0.35) transition-transform duration-500 hover:translate-y-1 ' />
+                <div className='overflow-hidden rounded-3xl'>
+                    <img src={images[currentImage]}
+                     alt="Nexora Digital Agency team working together"
+                     className={`w-full rounded-3xl object-cover shadow-[0_20px_40px_rgba(0,0,0,0.12) dark:shadow-[0_20px_40px_rgba(0,0,0,0.35) transition-opacity duration-700 opacity-100 hover:translate-y-1 ${isVisible ? 'opacity-100' : 'opacity-0'}`}/>
                 </div>
 
         </div>
