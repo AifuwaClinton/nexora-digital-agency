@@ -98,10 +98,10 @@ const Footer = () => {
             </div>
             
                 {/* Connect */}
-            <div id='connect' className='mt-12 border-t-2 border-gray-200 pt-8 dark:border-gray-800'>
+            <div id='connect' className='px-6 mt-12 border-t-2 border-gray-200 pt-8 dark:border-gray-800'>
 
-                <h3 className='text-sm font-semibold text-gray-900 dark:text-white'>
-                     Let's connect
+                <h3 className='text-lg font-semibold text-gray-900 dark:text-white'>
+                     Let's Connect
                 </h3>
 
 
