@@ -111,11 +111,11 @@ const Footer = () => {
 
                 <div className='mt-5 flex flex-col gap-3 text-sm sm:flex-row sm:items-center sm:gap-6'>
 
-                    <a href="mailto:clintonaifuwa7@gmail.com" className='text-gray-600 transition hover:text-primary dark:text-gray-400'>
+                    <a href="mailto:clintonaifuwa7@gmail.com" className='text-gray-600 underline underline-offset-8  transition-colors hover:text-primary dark:text-gray-400'>
                         clintonaifuwa7@gmail.com
                     </a>
 
-                    <a href="tel:+2349114703608" className='text-gray-600 transition hover:text-primary dark:text-gray-400'>
+                    <a href="tel:+2349114703608" className='text-gray-600 underline underline-offset-8 transition-colors hover:text-primary dark:text-gray-400'>
                         +2349114703608
                     </a>
                 </div>
