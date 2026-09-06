@@ -24,7 +24,7 @@ const Navbar = ({theme, setTheme}) => {
        </div>
 
        {/* Navigation Links */}
-       <div className='hidden items-center gap-8 md:flex'>
+       <div className='hidden items-center gap-8 lg:flex'>
         <a href="#home" className='text-sm font-medium text-gray-700 transition hover:text-primary dark:text-gray-300 dark:hover:text-primary'>Home</a>
         <a href="#about" className='text-sm font-medium text-gray-700 transition hover:text-primary dark:text-gray-300 dark:hover:text-primary'>About</a>
         <a href="#work" className='text-sm font-medium text-gray-700 transition hover:text-primary dark:text-gray-300 dark:hover:text-primary'>Work</a>
@@ -36,14 +36,14 @@ const Navbar = ({theme, setTheme}) => {
       <ToggleBtn theme={theme} setTheme={setTheme}/>
 
        {/*Connect Button  */}
-       <div className='hidden items-center gap-2 rounded-full bg-blue-500 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-600 md:flex'>
+       <div className='hidden items-center gap-2 rounded-full bg-blue-500 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-600 lg:flex'>
        <a href="#connect">Connect</a>
 
        <img src={assets.arrow} alt="" className='w-4'/>
        </div>
 
        {/*Mobile Menu Button */}
-       <button onClick={() => setMenuOpen(!menuOpen)} className='text-2xl md:hidden ' >
+       <button onClick={() => setMenuOpen(!menuOpen)} className='text-2xl lg:hidden ' >
         
         <img src={menuOpen ? assets.close : assets.menu}
          alt={menuOpen ? "Close menu" : "Open menu"}  className='w-10 h-10 bg-gray-100 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800'/>
@@ -51,7 +51,7 @@ const Navbar = ({theme, setTheme}) => {
        
        {/* Mobile Sidebar */}
        
-        <div className={`fixed z-50 top-20 right-0 flex flex-col h-screen bg-white shadow-[0_10px_30px_rgba(0,0,0,0.12)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.4)]  w-64 gap-3 p-6 md:hidden dark:bg-gray-950 transition-transform duration-700 ease-out ${menuOpen ? "translate-x-0" : "translate-x-full"}`}>
+        <div className={`fixed z-50 top-20 right-0 flex flex-col h-screen bg-white shadow-[0_10px_30px_rgba(0,0,0,0.12)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.4)]  w-64 gap-3 p-6 lg:hidden dark:bg-gray-950 transition-transform duration-700 ease-out ${menuOpen ? "translate-x-0" : "translate-x-full"}`}>
          
          <a href="#home" onClick={() => setMenuOpen(false)} className='text-sm font-medium rounded-lg px-4 py-3 text-gray-700 transition-colors hover:bg-primary/10 hover:text-primary dark:text-gray-300 dark:hover:bg-primary/10 dark:hover:text-primary'>Home</a>
          <a href="#about" onClick={() => setMenuOpen(false)} className='text-sm font-medium rounded-lg px-4 py-3 text-gray-700 transition-colors hover:bg-primary/10 hover:text-primary dark:text-gray-300 dark:hover:bg-primary/10 dark:hover:text-primary'>About</a>
