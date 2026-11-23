@@ -4,7 +4,8 @@ import assets from '../assets/assets'
 const WhatWeDo = () => {
     return (
 
-        <section id='services' className='mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24'>
+        <section id='services' 
+        className='scroll-mt-24 mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24'>
 
             {/* Heading */}
             <div className='text-center'>

@@ -2,7 +2,8 @@ import React from 'react'
 
 const About = () => {
     return (
-        <section id='about' className='mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24'>
+        <section id='about'
+         className='scroll-mt-24 mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24'>
             <div className='text-center'>
 
                 <p className='text-sm font-semibold uppercase tracking-widest text-primary'>

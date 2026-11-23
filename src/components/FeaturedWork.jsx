@@ -3,7 +3,8 @@ import assets from '../assets/assets'
 
 const FeaturedWork = () => {
   return (
-    <section id='work' className='mx-auto max-w-7xl px-6 py-18 lg:px-8 lg:py-24'>
+    <section id='work' 
+    className='scroll-mt-24 mx-auto max-w-7xl px-6 py-18 lg:px-8 lg:py-24'>
         <div className='text-center'>
 
             <p className='text-sm font-semibold uppercase tracking-widest text-primary'>Featured Work</p>

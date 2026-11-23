@@ -26,7 +26,8 @@ useEffect(() => {
 }, [images.length])
      
   return (
-    <section id="home" className='mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24'>
+    <section id="home" 
+    className='scroll-mt-24 mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24'>
         <div className='grid items-center gap-10 md:grid-cols-2 '>
 
             {/* Left side - Hero test */}

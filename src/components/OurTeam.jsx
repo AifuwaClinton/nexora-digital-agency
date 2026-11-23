@@ -3,7 +3,8 @@ import { teamData } from '../assets/assets'
 
 const OurTeam = () => {
     return (
-        <section id='team' className='mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24'>
+        <section id='team'
+         className='scroll-mt-24 mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24'>
 
             {/* Team Heading */}
             <div className='text-center'>
